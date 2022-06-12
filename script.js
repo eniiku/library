@@ -55,3 +55,14 @@ function displayBooks(library = []) {
 				`
 		}).join('');
 }
+
+function displayForm() {
+	const formButton = document.querySelector('[data-button=form]');
+	formButton.addEventListener('click', e => {
+		const form = document.querySelector('[data-form]');
+		form.setAttribute('style', 'display: flex;') 
+	})
+}
+
+displayForm();
+displayBooks(myLibrary);
