@@ -8,7 +8,32 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
+  <button data-button="form">NEW BOOK</button>
 	<div class="container" data-container></div>
+
+  <form data-form>
+		<div class="form-row">
+			<label for="title">Title:</label>
+			<input class="input-box" type="text" required>
+		</div>
+		<div class="form-row">
+			<label for="author">Author:</label>
+			<input class="input-box" type="text" required>
+		</div>
+		<div class="form-row">
+			<label for="pages">Pages:</label>
+			<input class="input-box" type="number" required>
+		</div>
+		<div class="form-row">
+			<label for="read">Status:</label>
+			<select class="select-box" required >
+				<option value="read">Read</option>
+				<option value="reading">Reading</option>
+				<option value="not-read">Not Read</option>
+			</select>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
 
   <script src="script.js"></script>
 </body>
