@@ -10,8 +10,10 @@ html {
 body {
   height: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 
 .container {
@@ -36,4 +38,33 @@ ul {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+form {
+  outline: 1px solid #000;
+  background: darkcyan;
+  position: absolute;
+  width: 21em;
+  height: 23em;
+  padding: 1em;
+  display: none;
+  .form-row,
+  .input-box,
+  .select-box {
+    width: 100%;
+  }
+  .input-box {
+    height: 1.8em;
+    padding: 0 .3em;
+  } 
+  .select-box {
+    height: 2em;
+    padding: .2em;
+  }
+  button {
+    margin-top: 2em;
+    padding: .5em 1.6em;
+    border-radius: 8px;
+    border: none;
+  }
 }

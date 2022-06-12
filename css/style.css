@@ -12,12 +12,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: relative;
 }
 
 .container {
@@ -52,5 +57,38 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+form {
+  outline: 1px solid #000;
+  background: darkcyan;
+  position: absolute;
+  width: 21em;
+  height: 23em;
+  padding: 1em;
+  display: none;
+}
+
+form .form-row,
+form .input-box,
+form .select-box {
+  width: 100%;
+}
+
+form .input-box {
+  height: 1.8em;
+  padding: 0 .3em;
+}
+
+form .select-box {
+  height: 2em;
+  padding: .2em;
+}
+
+form button {
+  margin-top: 2em;
+  padding: .5em 1.6em;
+  border-radius: 8px;
+  border: none;
 }
 /*# sourceMappingURL=style.css.map */
