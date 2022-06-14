@@ -40,7 +40,11 @@ ul {
   align-items: center;
 }
 
-form {
+section.display {
+  display: block;
+}
+
+section {
   outline: 1px solid #000;
   background: darkcyan;
   position: absolute;
@@ -48,30 +52,48 @@ form {
   height: 23em;
   padding: 1em;
   display: none;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-start;
 
-  .form-row,
-  .input-box,
-  .select-box {
-    width: 100%;
+  img {
+    width: 1.2em;
+    float: right;
   }
 
-  .input-box {
-    height: 1.8em;
-    padding: 0 .3em;
-  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    box-sizing: border-box;
+    margin-top: 3em;
 
-  .select-box {
-    height: 2em;
-    padding: .2em;
-  }
+    .form-row {
+      width: 100%;
 
-  button {
-    align-self: center;
-    padding: .5em 1.6em;
-    border-radius: 8px;
-    border: none;
+      label {
+        display: block;
+      }
+    }
+
+    .input-box,
+    .select-box {
+      width: 100%;
+    }
+
+    .input-box {
+      height: 1.8em;
+      padding: 0 0.3em;
+    }
+
+    .select-box {
+      height: 2em;
+      padding: 0.2em;
+    }
+
+    button {
+      align-self: center;
+      padding: 0.5em 1.6em;
+      border-radius: 8px;
+      border: none;
+    }
   }
 }
