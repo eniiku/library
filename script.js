@@ -59,10 +59,16 @@ function displayBooks(library = []) {
 }
 
 function displayForm() {
-  const formButton = document.querySelector('[data-button=form]');
+  const section = document.querySelector('[data-section]');
+  const formButton = document.querySelector('[data-button=open-form]');
+  const formExitButton = document.querySelector('[data-button=close-form]');
+
   formButton.addEventListener('click', (e) => {
-    const form = document.querySelector('[data-form]');
-    form.setAttribute('style', 'display: flex;');
+    section.classList.add('display');
+  });
+
+  formExitButton.addEventListener('click', (e) => {
+    section.classList.remove('display');
   });
 }
 
