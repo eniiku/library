@@ -51,19 +51,23 @@ form {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
+
   .form-row,
   .input-box,
   .select-box {
     width: 100%;
   }
+
   .input-box {
     height: 1.8em;
     padding: 0 .3em;
-  } 
+  }
+
   .select-box {
     height: 2em;
     padding: .2em;
   }
+
   button {
     align-self: center;
     padding: .5em 1.6em;
