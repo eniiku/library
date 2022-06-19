@@ -21,25 +21,25 @@
       <form>
         <div class="form-row">
           <label for="title">Title:</label>
-          <input class="input-box" type="text" required />
+          <input class="input-box" type="text" id="title" required />
         </div>
         <div class="form-row">
           <label for="author">Author:</label>
-          <input class="input-box" type="text" required />
+          <input class="input-box" type="text" id="author" required />
         </div>
         <div class="form-row">
           <label for="pages">Pages:</label>
-          <input class="input-box" type="number" required />
+          <input class="input-box" type="number" id="pages" required />
         </div>
         <div class="form-row">
           <label for="read">Status:</label>
-          <select class="select-box" required>
+          <select class="select-box" id="read" required>
             <option value="read">Read</option>
             <option value="reading">Reading</option>
             <option value="not-read">Not Read</option>
           </select>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" data-button="submit-form">Submit</button>
       </form>
     </section>
 
