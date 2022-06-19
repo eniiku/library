@@ -1,3 +1,8 @@
+const title = document.querySelector('#title');
+const author = document.querySelector('#author');
+const pages = document.querySelector('#pages');
+const read = document.querySelector('#status');
+
 const myLibrary = [
   {
     title: 'The Hobbit',
@@ -22,12 +27,13 @@ function Book(parameters) {
 
 function addBookToLibrary() {
   const bookParameters = {
-    title: prompt('Name of book?'),
-    author: prompt('Who made book? '),
-    pages: prompt('How many pages does book have? '),
-    read: prompt('Have you read this book yet'),
+    title: title.textContent,
+    author: author,
+    pages: pages,
+    read: read,
   };
 
+  console.log(myLibrary);
   const book = new Book(bookParameters);
   myLibrary.push(book);
 }
@@ -71,6 +77,11 @@ function displayForm() {
     section.classList.remove('display');
   });
 }
+
+const submitButton = document.querySelector('[data-button=submit-form]');
+submitButton.addEventListener('click', () => {
+  addBookToLibrary();
+});
 
 displayForm();
 displayBooks(myLibrary);
